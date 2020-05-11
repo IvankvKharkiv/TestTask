@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cat Select View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CatSelectView" customModule="TestTask_Fin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tYk-Ot-2eW">
+                                <rect key="frame" x="69.5" y="266" width="275" height="364"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the category  to filter the news." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieW-wa-RVn">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        </variation>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K9E-Qb-IBh">
+                                        <rect key="frame" x="37.5" y="82" width="200" height="282"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2C-gv-jSy" userLabel="btn_Sports">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Sports" backgroundImage="btn_Choose_Category">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btn_Sports:" destination="BYZ-38-t0r" eventType="touchUpInside" id="olr-IZ-bb2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9W7-ox-3wX" userLabel="btn_Arts">
+                                                <rect key="frame" x="0.0" y="56" width="200" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Arts" backgroundImage="btn_Choose_Category">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btn_Arts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Xq-6h-yDO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLK-BY-c3d" userLabel="btn_Business">
+                                                <rect key="frame" x="0.0" y="112" width="200" height="47.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Business" backgroundImage="btn_Choose_Category">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btn_Business:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O4f-Ue-2r9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAu-UG-c4P" userLabel="btn_Books">
+                                                <rect key="frame" x="0.0" y="167.5" width="200" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Books" backgroundImage="btn_Choose_Category">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btn_Books:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ckq-8a-WZy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyk-yG-Z8u" userLabel="btn_Movies">
+                                                <rect key="frame" x="0.0" y="223.5" width="200" height="58.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Movies" backgroundImage="btn_Choose_Category">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btn_Movies:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0b9-l2-q1w"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="282" id="66U-qf-o09"/>
+                                            <constraint firstAttribute="width" constant="200" id="Gol-xL-lyt"/>
+                                            <constraint firstAttribute="height" constant="232" id="oAg-eA-SJP"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="66U-qf-o09"/>
+                                                <exclude reference="oAg-eA-SJP"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="oAg-eA-SJP"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="66U-qf-o09"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63183357024762876" green="1" blue="0.78406672241787156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tYk-Ot-2eW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XKz-If-ew5"/>
+                            <constraint firstItem="tYk-Ot-2eW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j6T-9Q-G2h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="99"/>
+        </scene>
+        <!--Search Res Tbl View Ctrl-->
+        <scene sceneID="iT2-5E-ED4">
+            <objects>
+                <viewController storyboardIdentifier="TableResults1" id="C1U-SJ-eD8" customClass="SearchResTblViewCtrl" customModule="TestTask_Fin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YOJ-w1-wxo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eie-6D-pTG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="758"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Custom_Cell" id="5HZ-Lt-bpd" customClass="Custom_TableViewCell" customModule="TestTask_Fin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5HZ-Lt-bpd" id="W4w-Id-Q5B">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="web_url" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqr-iA-e7H">
+                                                    <rect key="frame" x="20" y="11" width="350" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="snippet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObE-qo-5zA">
+                                                    <rect key="frame" x="20" y="36" width="350" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="headline_Main" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qZ-ES-Hlu">
+                                                    <rect key="frame" x="20" y="88" width="350" height="51"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.71019336698651214" green="1" blue="0.50982797419897585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="lbl_headline_main" destination="4qZ-ES-Hlu" id="GvL-2l-KIC"/>
+                                            <outlet property="lbl_snippet" destination="ObE-qo-5zA" id="S6S-70-ubB"/>
+                                            <outlet property="lbl_web_url" destination="Rqr-iA-e7H" id="1Zl-MF-lJe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG8-Um-uZu" userLabel="btn_Previouse10Res">
+                                <rect key="frame" x="25" y="851" width="138" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="&lt;-10 Results" backgroundImage="btn_Choose_Category">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Previouse10Res:" destination="C1U-SJ-eD8" eventType="touchUpInside" id="Qwa-ED-zjU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5o-tR-fHq" userLabel="btn_Next10Res">
+                                <rect key="frame" x="250" y="851" width="139" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="10 Results-&gt;" backgroundImage="btn_Choose_Category">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_Next10Res:" destination="C1U-SJ-eD8" eventType="touchUpInside" id="DeJ-cZ-Xsu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63183357019999997" green="1" blue="0.78406672239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eie-6D-pTG" firstAttribute="leading" secondItem="GeW-GR-ggc" secondAttribute="leading" id="4wa-XP-3Yh"/>
+                            <constraint firstAttribute="bottom" secondItem="jG8-Um-uZu" secondAttribute="bottom" constant="15" id="TJp-0Y-kZJ"/>
+                            <constraint firstItem="eie-6D-pTG" firstAttribute="top" secondItem="GeW-GR-ggc" secondAttribute="top" id="Tcc-q9-DLn"/>
+                            <constraint firstAttribute="bottom" secondItem="Q5o-tR-fHq" secondAttribute="bottom" constant="15" id="U0i-sk-0e5"/>
+                            <constraint firstItem="GeW-GR-ggc" firstAttribute="trailing" secondItem="Q5o-tR-fHq" secondAttribute="trailing" constant="25" id="Zs1-IH-kfc"/>
+                            <constraint firstItem="GeW-GR-ggc" firstAttribute="trailing" secondItem="eie-6D-pTG" secondAttribute="trailing" id="ZtP-Pf-hrS"/>
+                            <constraint firstItem="jG8-Um-uZu" firstAttribute="leading" secondItem="GeW-GR-ggc" secondAttribute="leading" constant="25" id="wdb-kn-Vul"/>
+                            <constraint firstItem="GeW-GR-ggc" firstAttribute="bottom" secondItem="eie-6D-pTG" secondAttribute="bottom" constant="60" id="xdP-sg-3S3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GeW-GR-ggc"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableview" destination="eie-6D-pTG" id="icS-V8-EIC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQD-xo-YXC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="835" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_Choose_Category" width="25" height="6"/>
+    </resources>
+</document>
